@@ -18,7 +18,7 @@ class LetterFinderTest < Minitest::Test
   end
 
   def test_different_starting_index
-  	
+  	assert_equal 4, Finder.new.what_index("misinformed", "I", 3)
   end
 
 end
