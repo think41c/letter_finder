@@ -17,4 +17,8 @@ class LetterFinderTest < Minitest::Test
   	assert_equal 6, Finder.new.what_index("AQuick", "K")
   end
 
+  def test_different_starting_index
+  	
+  end
+
 end

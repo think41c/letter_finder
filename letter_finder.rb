@@ -3,7 +3,7 @@ class Finder
     word   = word.downcase
     letter = letter.downcase
     string_length = word.length
-    (0..string_length-1).each do |x|
+    (start_index..string_length-1).each do |x|
       if word[x] == letter
         return x + 1
       elsif x == string_length-1
