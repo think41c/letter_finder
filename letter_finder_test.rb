@@ -14,14 +14,14 @@ class LetterFinderTest < Minitest::Test
   end
 
   def test_upper_case
-  	assert_equal 6, Finder.new.what_index("AQuick", "K")
+    assert_equal 6, Finder.new.what_index("AQuick", "K")
   end
 
   def test_different_starting_index
-  	assert_equal 4, Finder.new.what_index("misinformed", "I", 3)
+    assert_equal 4, Finder.new.what_index("misinformed", "I", 3)
   end
 
   def test_different_starting_index
-  	assert_equal 5, Finder.new.what_index("mississippi", "I", 3)
+    assert_equal 5, Finder.new.what_index("mississippi", "I", 3)
   end
 end
